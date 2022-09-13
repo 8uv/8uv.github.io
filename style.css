@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Transport';
+    src: url(fonts/Transport\ Medium.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+html, body {
+    height: calc(100% - 1vh);
+}
+
+body {
+    font-family: 'Zilla Slab', serif;
+    background: #211A1D;
+    color: #F8F0FB;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+} p, ul, li {
+    line-height: 1;
+} .title {
+    display: flex;
+    align-items: center;
+    font-family: 'Transport', sans-serif;
+    margin: .35vw 0;
+} .title::after {
+    content: '';
+    border-bottom: 3px #CAD5CA solid;
+    flex: 1;
+} .title > h1 {
+    padding-right: 14px;
+} .card {
+    flex-grow: 1;
+    flex-flow: column nowrap;
+    min-height: 25vh;
+    min-width: 30vw;
+    max-width: 40vw;
+    backdrop-filter: brightness(0.775);
+    border: 2px solid #171214;
+    border-radius: .6vw;
+    box-shadow: 0 0 1px 1px #171214;
+    padding: 10px;
+    margin: 1vh;
+    font-size: 1.3em;
+} .link-card {
+    max-width: none;
+} .links {
+    display: flex;
+    flex-wrap: wrap;
+} a {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: #221B1E;
+    border: 2px solid #171214;
+    box-shadow: 0 0 1px 1px #171214;
+    border-radius: .3vw;
+    padding: 7px;
+    margin: 0 7px 7px 0;
+    transition: 0.2s;
+} a > img {
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+} a > p::after {
+    content: '🡕';
+    padding: 3px 3px;
+    opacity: 0.45;
+    transition: 0.2s;
+} a > p:hover::after {
+    opacity: 0.75;
+} .clicked {
+    box-shadow: 0 0 1px 2px rgb(23, 18, 30);
+    border: 2px solid rgb(43, 38, 50)
+} .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} .gallery > * {
+    margin: 0 7px;
+    border: 2px dashed rgba(202, 213, 202, .65);
+} .col1, .col2, .col3 {
+    display: flex;
+} .col2 > *, .col1 > *, .col3 > * {
+    flex: 1;
+} .col3 {
+    flex: 2;
+} .col3 > * {
+    max-width: none;
+}
