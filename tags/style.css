@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+font-face {
+    font-family: "Manrope";
+    src: url(fonts/Manrope-Medium.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(fonts/Manrope-Bold.ttf);
+    font-weight: bold;
+}
+
+.inline {
+    display: inline-flex;
+    line-height: 0;
+} .colour {
+    display: inline-flex;
+    background: #000;
+    color: #000;
+} #content {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: #202020
+} #content > h1 {
+    font-weight: bold;
+    font-size: 3em;
+} #output {
+    font-family: "Source Sans Pro";
+    background: #000;
+    margin-top: 2vh;
+    line-height: 0;
+    padding: 5px;
+    position: absolute
+}
