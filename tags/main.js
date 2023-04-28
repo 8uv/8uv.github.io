@@ -48,6 +48,13 @@ document.getElementById("update").addEventListener("click", () => {
     update()
 })
 
+document.getElementById("randomise").addEventListener("click", () => {
+    document.querySelectorAll("select").forEach(el => {
+        const s = Math.floor(Math.random() * el.children.length)
+        el.value = el.children[s].value
+    })
+})
+
 setInterval(() => {
     twemoji.parse(document.body)
 }, 500)

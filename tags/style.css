@@ -38,7 +38,7 @@ font-face {
     border: 1px dashed #000;
 } #output {
     font-family: "Source Sans Pro";
-    background: #000;
+    background: #fff;
     margin-top: 2vh;
     padding: 5px;
     display: flex;
