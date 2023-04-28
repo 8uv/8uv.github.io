@@ -50,8 +50,10 @@ document.getElementById("update").addEventListener("click", () => {
 
 document.getElementById("randomise").addEventListener("click", () => {
     document.querySelectorAll("select").forEach(el => {
-        const s = Math.floor(Math.random() * el.children.length)
-        el.value = el.children[s].value
+        if(el.className != "exclude") {
+            const s = Math.floor(Math.random() * el.children.length)
+            el.value = el.children[s].value
+        }
     })
 })
 
