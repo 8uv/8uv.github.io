@@ -46,7 +46,7 @@
         <select name="languages" id="donation-tag">
           <option value="none"> </option>
           <option value="4c" bgc="174, 87, 43">4¢</option>
-          <option value="35c" bgc="174, 87, 43">35¢</option>
+          <option value="35c" bgc="175, 110, 21">35¢</option>
           <option value="frivelous" bgc="85, 170, 0">frivelous</option>
           <option value="money waster" bgc="0, 178, 119">money waster</option>
           <option value="good lord" bgc="214, 16, 19">good lord</option>
@@ -76,6 +76,14 @@
         </form>
 
         <form action="#">
+          <h2 class="inline">vr tag: </h2>
+          <select name="languages" id="vr-tag">
+            <option value="no"> </option>
+            <option value="yes" bgc="221, 126, 2">VR</option>
+          </select>
+          </form>
+
+        <form action="#">
             <h2 class="inline">background colour: </h2>
             <select name="languages" id="background">
               <option value="black" bgc="0, 0, 0">black</option>
@@ -86,11 +94,12 @@
         <button id="update">update</button>
 
         <div id="output">
-            <span id="heart"></span>
-            <span id="dono"></span>
-            <span id="group"></span>
-            <span id="display"></span>
-        </div>
+            <span id="heart"></span> 
+            <span id="vr"></span> 
+            <span id="dono"></span> 
+            <span id="group"></span> 
+            <span id="display"></span> 
+        </div> 
     </div>
 </body>
 <script src="main.js"></script>

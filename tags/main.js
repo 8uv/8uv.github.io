@@ -2,6 +2,7 @@ const colours = document.querySelectorAll(".colour")
 const group = document.getElementById("group-tag")
 const dono = document.getElementById("donation-tag")
 const heart = document.getElementById("heart-tag")
+const vr = document.getElementById("vr-tag")
 const output = document.getElementById("output")
 let color = "0, 0, 0"
 
@@ -22,15 +23,16 @@ function update() {
     const groupTag = group.options[group.selectedIndex].text
     const donoTag = dono.options[dono.selectedIndex].text
     const heartTag = heart.options[heart.selectedIndex].text
+    const vrTag = vr.options[vr.selectedIndex].text
 
 
-    const values = {"display": [display, color], "group": [groupTag, group.options[group.selectedIndex].getAttribute("bgc")], "dono": [donoTag, dono.options[dono.selectedIndex].getAttribute("bgc")], "heart": [heartTag, heart.options[heart.selectedIndex].getAttribute("bgc")]}
+    const values = {"display": [display, color], "group": [groupTag, group.options[group.selectedIndex].getAttribute("bgc")], "dono": [donoTag, dono.options[dono.selectedIndex].getAttribute("bgc")], "heart": [heartTag, heart.options[heart.selectedIndex].getAttribute("bgc")], "vr": [vrTag, vr.options[vr.selectedIndex].getAttribute("bgc")]}
 
 
     document.querySelectorAll("span").forEach(span => {
         for (const [key, value] of Object.entries(values)) {
             if (span.id == key) {
-                span.innerHTML = `[${value[0]}]`
+                span.innerHTML = ` [${value[0]}]`
                 span.style.color = `rgb(${value[1]})`
             }
         }
