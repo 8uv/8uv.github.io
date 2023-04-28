@@ -16,9 +16,12 @@ font-face {
     display: inline-flex;
     line-height: 0;
 } .colour {
-    display: inline-flex;
     background: #000;
     color: #000;
+} #clrs {
+    display: inline-flex;
+    user-select: none;
+    cursor: crosshair;
 } #content {
     position: absolute;
     width: 95%;
@@ -29,10 +32,12 @@ font-face {
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
     font-size: 1.3em;
-    color: #202020
+    color: #202020;
 } #content > h1 {
     font-weight: bold;
     font-size: 3em;
+} #content > h2, h1 {
+    line-height: 0;
 } button {
     background: #fff;
     border: 1px dashed #000;
