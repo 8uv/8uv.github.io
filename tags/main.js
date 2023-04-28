@@ -55,6 +55,7 @@ document.getElementById("randomise").addEventListener("click", () => {
             el.value = el.children[s].value
         }
     })
+    update()
 })
 
 setInterval(() => {
