@@ -37,8 +37,9 @@ function update() {
             }
         }
         span.innerHTML = span.innerHTML.replace(/\[\]/g, "")
-        span.innerHTML = span.innerHTML.replace("🧡", "<img draggable=\"false\" class=\"emoji\" alt=\"💗\" src=\"https://cdn.jsdelivr.net/gh/twitter/twemoji@v11.4.0/2/72x72/1f9e1.png\" width='16' height='16'>")
-        span.innerHTML = span.innerHTML.replace("🖤", "<img draggable=\"false\" class=\"emoji\" alt=\"💗\" src=\"https://cdn.jsdelivr.net/gh/twitter/twemoji@v11.4.0/2/72x72/1f5a4.png\" width='16' height='16'>")
+        span.innerHTML = span.innerHTML.replace("🧡", "<img draggable=\"false\" class=\"emoji\" alt=\"🧡\" src=\"https://cdn.jsdelivr.net/gh/twitter/twemoji@v11.4.0/2/72x72/1f9e1.png\" width='16' height='16'>")
+        span.innerHTML = span.innerHTML.replace("🖤", "<img draggable=\"false\" class=\"emoji\" alt=\"🖤\" src=\"https://cdn.jsdelivr.net/gh/twitter/twemoji@v11.4.0/2/72x72/1f5a4.png\" width='16' height='16'>")
+        span.innerHTML = span.innerHTML.replace("🤍", "<img draggable=\"false\" class=\"emoji\" alt=\"🤍\" src=\"https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.0/assets/72x72/1f90d.png\" width='16' height='16'>")
     })
 
     output.style.backgroundColor = `rgb(${document.getElementById("background").options[document.getElementById("background").selectedIndex].getAttribute("bgc")})`
