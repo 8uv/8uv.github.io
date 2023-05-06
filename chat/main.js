@@ -1,3 +1,7 @@
+// rewritten in js by 9n25
+// modulo function taken from stackoverflow. thanks to the core % operator for being Fucked Up!
+// feel free to use this wherever
+
 const vals = ["196, 40, 28", "13, 105, 172", "39, 70, 45", "107, 50, 124", "218, 133, 65", "245, 205, 48", "232, 186, 200", "215, 197, 154"]
 
 const getValue = name => {
