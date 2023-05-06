@@ -1,0 +1,9 @@
+#output {
+    margin: 20px 0;
+} .colour {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 5px;
+}
