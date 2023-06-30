@@ -71,7 +71,7 @@ document.getElementById("load").addEventListener("click", () => {
     console.log(v)
 
     document.getElementById("display").value = v[0]
-    color = v[1]
+    color = v[1].replace(/-/g, ",")
 
     for(i in v) {
         document.querySelectorAll("select").forEach(el => {
