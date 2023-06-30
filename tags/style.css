@@ -50,4 +50,6 @@ font-face {
     position: absolute;
     border-radius: .2vw;
     padding: .5vw;
+} #data {
+    margin-top: 25vh;
 } 

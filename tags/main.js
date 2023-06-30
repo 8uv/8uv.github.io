@@ -59,3 +59,32 @@ document.getElementById("randomise").addEventListener("click", () => {
 setInterval(() => {
     twemoji.parse(document.body)
 }, 500)
+
+document.getElementById("export").addEventListener("click", () => {
+    const i = document.getElementById("datain")
+
+    i.value = `${document.getElementById("display").value},${color.replace(/, /g, '-')},${group.options[group.selectedIndex].value},${dono.options[dono.selectedIndex].value},${heart.options[heart.selectedIndex].value},${vr.options[vr.selectedIndex].value}`
+})
+
+document.getElementById("load").addEventListener("click", () => {
+    const v = document.getElementById("datain").value.split(",")
+    console.log(v)
+
+    document.getElementById("display").value = v[0]
+    color = v[1]
+
+    for(i in v) {
+        document.querySelectorAll("select").forEach(el => {
+            if(el.className != "exclude") {
+                for(ii in el.children) {
+                    if(el.children[ii].value == v[i]) {
+                        console.log(`match! ${el.id} ${v[i]}`)
+                        el.value = v[i]
+                    }
+                }
+            }
+        })
+    }
+
+    update()
+})
