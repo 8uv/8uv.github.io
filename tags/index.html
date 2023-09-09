@@ -1,126 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>bus sim title previews</title>
-</head>
-<body>
-    <div id="content">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+      <title>bus sim title previews</title>
+  </head>
+  <body>
+      <div id="content">
 
-        <div>
-            <h2 class="inline">display name: </h2>
-            <textarea id="display"></textarea>
-        </div>
+        <h4 class="hi">fresh new disclaimer, all of my effort here was put into the js and i can't really be bothered making a nice frontend. it still (barely) works :3</h4>
 
-        <h2>chat colour: 
-          <div id="clrs">
-            <div class="colour" bgc="196, 40, 28">█</div>
-            <div class="colour" bgc="13, 105, 172">█</div>
-            <div class="colour" bgc="39, 70, 45">█</div>
-            <div class="colour" bgc="107, 50, 124">█</div>
-            <div class="colour" bgc="218, 133, 65">█</div>
-            <div class="colour" bgc="245, 205, 48">█</div>
-            <div class="colour" bgc="232, 186, 200">█</div>
-            <div class="colour" bgc="215, 197, 154">█</div>
+          <div>
+              <h2 class="inline">display name: </h2>
+              <textarea id="display"></textarea>
           </div>
-        </h2>
 
-        <form action="#">
-            <h2 class="inline">group tag: </h2>
-            <select name="languages" id="group-tag">
-              <option value="none"> </option>
-              <option value="passenger" bgc="0, 23, 147">Passenger</option>
-              <option value="driver" bgc="0, 189, 47">Driver</option>
-              <option value="og" bgc="225, 162, 0">OG Driver</option>
-              <option value="authenticator" bgc="139, 43, 182">Authenticator</option>
-              <option value="best" bgc="48, 238, 92">Best Driver</option>
-              <option value="dev" bgc="149, 0, 199">Developer</option>
-              <option value="best" bgc="92, 3, 207">Noble</option>
-            </select>
-        </form>
+          <h2>chat colour: 
+            <div id="clrs">
+              <div class="colour" bgc="196, 40, 28">█</div>
+              <div class="colour" bgc="13, 105, 172">█</div>
+              <div class="colour" bgc="2, 166, 78">█</div>
+              <div class="colour" bgc="107, 50, 124">█</div>
+              <div class="colour" bgc="218, 133, 65">█</div>
+              <div class="colour" bgc="245, 205, 48">█</div>
+              <div class="colour" bgc="232, 186, 200">█</div>
+              <div class="colour" bgc="215, 197, 154">█</div>
+            </div>
+          </h2>
 
-        <form action="#">
-        <h2 class="inline">donation tag: </h2>
-        <select name="languages" id="donation-tag">
-          <option value="none"> </option>
-          <option value="4c" bgc="174, 87, 43">4¢</option>
-          <option value="35c" bgc="175, 110, 21">35¢</option>
-          <option value="frivelous" bgc="85, 170, 0">frivelous</option>
-          <option value="money waster" bgc="0, 214, 143">money waster</option>
-          <option value="good lord" bgc="214, 16, 19">good lord</option>
-        </select>
-        </form>
+          <form action="#">
+              <h2 class="inline">group tag: </h2>
+              <select name="languages" id="group-tag">
+                <option value="none1"> </option>
+                <option value="passenger" bgc="0, 23, 147">Passenger</option>
+                <option value="driver" bgc="0, 189, 47">Driver</option>
+                <option value="og" bgc="225, 162, 0">OG Driver</option>
+                <option value="authenticator" bgc="139, 43, 182">Authenticator</option>
+                <option value="best" bgc="48, 238, 92">Best Driver</option>
+                <option value="dev" bgc="149, 0, 199">Developer</option>
+                <option value="contributor" bgc="244, 63, 8">Contributor</option>
+                <option value="knitter" bgc="146, 66, 244">Knitter</option>
+                <option value="best" bgc="92, 3, 207">Noble</option>
+              </select>
+          </form>
 
-        <form action="#">
-        <h2 class="inline">heart tag: </h2>
-        <select name="languages" id="heart-tag">
-          <option value="none"> </option>
-          <option value="beating" bgc="133, 80, 43">💗</option>
-          <option value="orange" bgc="215, 140, 56">🧡</option>
-          <option value="red" bgc="211, 58, 53">❤</option>
-          <option value="blue" bgc="40, 110, 216">💙</option>
-          <option value="green" bgc="83, 211, 74">💚</option>
-          <option value="purple" bgc="130, 84, 188">💜</option>
-          <option value="yellow" bgc="211, 211, 84">💛</option>
-          <option value="black" bgc="34, 33, 34">🖤</option>
-          <option value="orange+" bgc="212, 143, 43">🧡+</option>
-          <option value="red+" bgc="212, 1, 1">❤+</option>
-          <option value="blue+" bgc="1, 1, 212">💙+</option>
-          <option value="green+" bgc="1, 216, 1">💚+</option>
-          <option value="purple+" bgc="115, 36, 188">💜+</option>
-          <option value="yellow+" bgc="213, 216, 50">💛+</option>
-          <option value="black+" bgc="0, 0, 0">🖤+</option>
-          <option value="none2"> </option>
-          <option value="white" bgc="227, 226, 207">🤍</option>
-          <option value="white+" bgc="255,255,255">🤍+</option>
-          <option value="gift" bgc="212, 1, 1">💝</option>
-          <option value="outline" bgc="130, 84, 188">💟</option>
-          <option value="gift+" bgc="211, 58, 53">💝+</option>
-          <option value="outline+" bgc="130, 84, 188">💟+</option>
-        </select>
-        </form>
-
-        <form action="#">
-          <h2 class="inline">vr tag: </h2>
-          <select name="languages" id="vr-tag">
-            <option value="no"> </option>
-            <option value="yes" bgc="221, 126, 2">VR</option>
+          <form action="#">
+          <h2 class="inline">donation tag: </h2>
+          <select name="languages" id="donation-tag">
+            <option value="none2"> </option>
+            <option value="4c" bgc="174, 87, 43">4¢</option>
+            <option value="35c" bgc="175, 110, 21">35¢</option>
+            <option value="frivelous" bgc="85, 170, 0">frivelous</option>
+            <option value="money waster" bgc="0, 214, 143">money waster</option>
+            <option value="good lord" bgc="214, 16, 19">good lord</option>
           </select>
           </form>
 
-        <form action="#">
-            <h2 class="inline">background colour: </h2>
-            <select name="languages" id="background" class="exclude">
-              <option value="white" bgc="255, 255, 255">white</option>
-              <option value="black" bgc="0, 0, 0">black</option>
-              <option value="screenshot" bgc="7, 5, 3">screenshot</option>
+          <form action="#">
+          <h2 class="inline">heart tag: </h2>
+          <select name="languages" id="heart-tag">
+            <option value="none3"> </option>
+            <option value="beating" bgc="133, 80, 43">💗</option>
+            <option value="orange" bgc="215, 140, 56">🧡</option>
+            <option value="red" bgc="211, 58, 53">❤</option>
+            <option value="blue" bgc="40, 110, 216">💙</option>
+            <option value="green" bgc="83, 211, 74">💚</option>
+            <option value="purple" bgc="130, 84, 188">💜</option>
+            <option value="yellow" bgc="211, 211, 84">💛</option>
+            <option value="black" bgc="34, 33, 34">🖤</option>
+            <option value="orange+" bgc="212, 143, 43">🧡+</option>
+            <option value="red+" bgc="212, 1, 1">❤+</option>
+            <option value="blue+" bgc="1, 1, 212">💙+</option>
+            <option value="green+" bgc="1, 216, 1">💚+</option>
+            <option value="purple+" bgc="115, 36, 188">💜+</option>
+            <option value="yellow+" bgc="213, 216, 50">💛+</option>
+            <option value="black+" bgc="0, 0, 0">🖤+</option>
+            <option value="none4"> </option>
+            <option value="white" bgc="227, 226, 207">🤍</option>
+            <option value="white+" bgc="255,255,255">🤍+</option>
+            <option value="gift" bgc="212, 1, 1">💝</option>
+            <option value="outline" bgc="130, 84, 188">💟</option>
+            <option value="gift+" bgc="211, 58, 53">💝+</option>
+            <option value="outline+" bgc="130, 84, 188">💟+</option>
+          </select>
+          </form>
+
+          <form action="#">
+            <h2 class="inline">vr tag: </h2>
+            <select name="languages" id="vr-tag">
+              <option value="none5"> </option>
+              <option value="yes" bgc="221, 126, 2">VR</option>
             </select>
-        </form>
+            </form>
 
-        <button id="update">update</button>
-        <button id="randomise">randomise</button>
+          <form action="#">
+              <h2 class="inline">background colour: </h2>
+              <select name="languages" id="background" class="exclude">
+                <option value="screenshot" bgc="7, 5, 3">screenshot</option>
+                <option value="white" bgc="255, 255, 255">white</option>
+                <option value="black" bgc="0, 0, 0">black</option>
+              </select>
+          </form>
 
-        <div id="output">
-            <span id="heart"></span> 
-            <span id="vr"></span> 
-            <span id="dono"></span> 
-            <span id="group"></span> 
-            <span id="display"></span> 
-        </div> 
-        
-      <div id="data">
-        <textarea id="datain" rows="5" cols="40"></textarea>
-        <div>
-          <button id="export">export data</button>
-          <button id="load">load data</button>
+          <button id="update">update</button>
+          <button id="updateC">update collapsed</button>
+          <button id="randomise">randomise</button>
+
+          <div id="output">
+              <span id="heart"></span> 
+              <span id="vr"></span> 
+              <span id="dono"></span> 
+              <span id="group"></span> 
+              <span id="ctags" class="gradient"></span>
+              <span id="display"></span> 
+          </div> 
+          
+        <div id="data">
+          <textarea id="datain" rows="5" cols="40"></textarea>
+          <div>
+            <button id="export">export data</button>
+            <button id="load">load data</button>
+          </div>
         </div>
       </div>
-    </div>
 
-</body>
-<script src="main.js"></script>
-</html>
+  </body>
+  <script src="main.js"></script>
+  </html>
